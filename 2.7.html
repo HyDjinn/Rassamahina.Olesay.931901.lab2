@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Task 2.7</title>
+        <style>
+            div{
+                color: white;
+                width: 150px;
+                height: 90px;
+                position: relative;
+            }
+            .son{
+                position: absolute;
+                top:30%;
+                right: 0%;
+                background-color: indigo; 
+                width: 300px;
+                height:195px;
+            }
+            .fixed{
+                background-color: forestgreen; 
+                width: 100px;
+                position: fixed;
+                right: 0%;
+                bottom: 0%;
+                z-index: 50;
+
+            }
+        </style>
+    </head>
+    <body>
+       <div style="background-color: blueviolet; position:static; height: 100;">
+          It's a static div!  
+       </div>
+       <div style="background-color: darkred;">
+             It's a relative div!  
+         </div>
+        <div style="background-color: peru; transform: translate(25px,-25px) ;">
+             It's a relative div!  
+         </div>
+        <div style="background-color: indianred; width: 600px;height: 390px;z-index: 100;">
+            It's a relative div!   
+                <div class="son">
+                    It's a abcolute div with relative parent!  
+                </div>
+         </div>
+         <div class="fixed">
+            It's a fixed div!  
+        </div> 
+          
+    </body>
+</html>
